@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grajo Eghie - Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 2em;
+        }
+
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff0000; /* red border */
+        }
+
+        h1 {
+            color: #ff0000; /* red text */
+            margin-top: 0.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+        }
+
+        section {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #3c3c3c; /* dark red background */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        section::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background-color: #ff0000; /* red line */
+        }
+
+        h2 {
+            color: #ff0000; /* red text */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #1e1e1e;
+        }
+        
+        .social-icons {
+            font-size: 1.5em;
+            margin: 0 0.5em;
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons:hover {
+            color: #ff0000; /* red on hover */
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+            margin-top: 1em;
+        }
+
+        .skills-list li {
+            background-color: #2c2c2c; /* dark red background */
+            padding: 0.5em;
+            border-radius: 5px;
+            margin-right: 0.5em;
+        }
+
+        .experience-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 1em;
+        }
+
+        .experience-list li {
+            margin-bottom: 1em;
+        }
+
+        .contact-info {
+            margin-top: 1em;
+        }
+
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+		
+		/* Add this style for fixed background image while scrolling */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('eg1.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3; /* Adjust the opacity as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="eg.jpg" alt="Eghie Grajo">
+        <h1>Eghie Grajo</h1>
+        <p>Student @ Our Lady of Fatima University</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello, my name is Eghie Grajo, Im currently 21 years old and I am a Second Year Student at Our Lady Of Fatima University. I am currently studying BS Information Technology, with an emphasis on Web and Gaming Development.
+		<br></br>
+		I was born and raised in Makati City and have always been interested in Technology.
+        I’ve been working on this portfolio recently and I hope you’ll take a look at it!</p>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>• Gaming</li>
+            <li>• Listening to Music</li>
+            <li>• Learning to Code</li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul>
+            <li>• Studied at Makati HighSchool year 2015</li>
+            <li>• Graduated Senior High in STI College Pasay-Edsa year 2019</li>
+            <li>• Currently Studying in Our Lady of Fatima University year</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>JAVA</li>
+            <li>C++</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <ul class="experience-list">
+            <li>Intern @ ESCO (September 2019 - March 2020)</li>
+            <li>Monitoring and Encoder @ A.Rosces Public Transport Group (2021 - 2022)</li>
+        </ul>
+    </section>
+
+    <footer>
+		<div class="contact-info">
+            <p>Send me an email @: <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTLHGGQVpxhQkGmtLqtSDnVpGbgjfmfgzTfWBHqlVqFfHqTvzCkcPLnjJkqMtDJmKqFfvV">eijiigrajo45@gmail.com</a></p>
+        </div>
+		
+		<p>&copy; 2023 Eghie Grajo. All rights reserved.</p>
+		
+		<p>or visit my socials</p>
+         <div>
+            <a href="https://www.facebook.com/ikaraserueijii" class="social-icons" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/eghiiieee/" class="social-icons" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/egoooyyy" class="social-icons" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+		
+		
+        
+    </footer>
+</body>
+</html>
